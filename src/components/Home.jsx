@@ -49,8 +49,9 @@ const HomeCanvasSmooth = () => {
   // 🔹 Preload frames
   useEffect(() => {
     const paths = Array.from({ length: TOTAL_FRAMES }, (_, i) =>
-      `/frames/shoes/frame_${String(i).padStart(3, "0")}.webp`
-    );
+  `/frames/shoes2/${String(i + 1).padStart(5, "0")}.png`
+);
+
     const imgs = [];
     let loaded = 0;
   
